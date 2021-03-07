@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Col-Row</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        .cell{
+            background-color: rgba(86,64,124,.15);
+            border: 1px solid rgba(86, 61, 124, .2);
+            padding: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Coll and Rows</h1>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 cell">4</div>
+            <div class="col-4 cell">4</div>
+            <div class="col-4 cell">4</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col cell">col</div>
+            <div class="col cell">col</div>
+            <div class="col cell">col</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3 cell">col-3</div>
+            <div class="col cell">col</div>
+            <div class="col cell">col</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col cell">col=auto sum to 12</div>
+            <div class="col-6 cell">col-6</div>
+            <div class="col cell">col=auto sum to 12</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col cell">col</div>
+            <div class="col-auto cell">autoWidthRelativelyText</div>
+            <div class="col cell">col</div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>col and row alignment</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .row{
+            height: 8rem;
+            background-color: rgba(255, 0, 0, .1);
+            margin-bottom: 1rem;
+        }
+        div[class*="col"]{
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+            padding: .5rem;
+        }
+    </style>
+  </head>
+  <body>
+      <h1>align rows and cols</h1>
+    <hr>
+    <!--Dikey Hizalama-->
+    <div class="container">
+        <!--Satırları Üstte Hizalama--> 
+        <div class="row align-items-start">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+        <!--Satırları Ortada Hizalama-->
+        <div class="row align-items-center">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+        <!--Satırları Altta Hizalama-->
+        <div class="row align-items-end">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+        <!--Sütünları Dikey Hizalama-->
+        <div class="row ">
+            <div class="col align-self-start">col</div>
+            <div class="col align-self-center">col</div>
+            <div class="col align-self-end">col</div>
+        </div>
+        <hr>
+        <!--Yatay Hizalama-->
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+                <div class="col-3">col</div>
+            </div>
+        </div>    
+
+    </div>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"> </script>
+
+  </body>
+</html>
